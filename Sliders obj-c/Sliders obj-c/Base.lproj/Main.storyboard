@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csy-hb-Rqh">
+                                <rect key="frame" x="139" y="104" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-37-YkZ">
+                                <rect key="frame" x="101" y="221" width="118" height="31"/>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="OeI-Vq-udb"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CGn-37-YkZ" secondAttribute="bottom" constant="317" id="8oT-rr-ebs"/>
+                            <constraint firstAttribute="trailing" secondItem="CGn-37-YkZ" secondAttribute="trailing" constant="103" id="ByQ-nZ-Gb1"/>
+                            <constraint firstItem="CGn-37-YkZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="103" id="GFo-C4-lcB"/>
+                            <constraint firstItem="CGn-37-YkZ" firstAttribute="top" secondItem="csy-hb-Rqh" secondAttribute="bottom" constant="96" id="IE6-Wk-WaJ"/>
+                            <constraint firstItem="csy-hb-Rqh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="139" id="LrC-st-iAx"/>
+                            <constraint firstItem="csy-hb-Rqh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="84" id="Mmo-Ts-2D5"/>
+                            <constraint firstAttribute="trailing" secondItem="csy-hb-Rqh" secondAttribute="trailing" constant="139" id="aQH-aJ-RQk"/>
+                            <constraint firstItem="CGn-37-YkZ" firstAttribute="top" secondItem="csy-hb-Rqh" secondAttribute="bottom" constant="96" id="zfq-3g-d9O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="csy-hb-Rqh" id="dHO-RC-N1Y"/>
+                        <outlet property="slider" destination="CGn-37-YkZ" id="ebI-Ki-5YT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="278"/>
+        </scene>
+    </scenes>
+</document>
